@@ -1,7 +1,7 @@
 /**
  * 二叉树的递归遍历，非递归遍历，已经衍生出来的其他问题。
  */
-package com.algorithm.sort;
+package com.algorithm.Tree;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -11,12 +11,12 @@ import java.util.Stack;
  */
 public class BinaryTree {
 	
-	private int data[]={1,2,3,5,9,8,5};
+	private int data[]={1,2,3,5,9,8,5,100};
 	private static List<TreeNode> nodeList=null;
 	/**
 	 * 创建B树
 	 */
-	public void createBTree(){
+	public void createBTree(int data[]){
 		nodeList = new LinkedList<BinaryTree.TreeNode>();
 		
 		for(int nodeIndex=0;nodeIndex<data.length;nodeIndex++){
@@ -104,7 +104,7 @@ public class BinaryTree {
 
 	public static void main(String[] args) {
 		BinaryTree bt=new BinaryTree();
-		bt.createBTree();
+		bt.createBTree(bt.data);
 		bt.inOrderTraverse(nodeList.get(0));
 		System.out.println("\n+++++++++++++");
 		System.out.println(bt.sum(nodeList.get(0)));
@@ -139,5 +139,4 @@ public class BinaryTree {
 			this.isVisted = isVisted;
 		}
 	}
-
 }
