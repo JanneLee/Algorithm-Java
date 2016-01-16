@@ -11,7 +11,7 @@ import java.util.Stack;
  */
 public class BinaryTree {
 	
-	private int data[]={1,2,3,5,9,8,5,100};
+	private int data[]={1,2,3,5,9,8,5,100,11};
 	private static List<TreeNode> nodeList=null;
 	/**
 	 * ´´½¨BÊ÷
