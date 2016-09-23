@@ -1,5 +1,5 @@
 /**
- * ¶þ²æÊ÷µÄµÝ¹é±éÀú£¬·ÇµÝ¹é±éÀú£¬ÒÑ¾­ÑÜÉú³öÀ´µÄÆäËûÎÊÌâ¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄµÝ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÇµÝ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¡£
  */
 package com.algorithm.Tree;
 
@@ -14,7 +14,7 @@ public class BinaryTree {
 	private int data[]={1,2,3,5,9,8,5,100,11};
 	private static List<TreeNode> nodeList=null;
 	/**
-	 * ´´½¨BÊ÷
+	 * ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½
 	 */
 	public void createBTree(int data[]){
 		nodeList = new LinkedList<BinaryTree.TreeNode>();
@@ -28,7 +28,7 @@ public class BinaryTree {
 			nodeList.get(parentIndex).rightTree=nodeList.get(parentIndex*2+2);
 		}
 		int lastParentIndex = data.length / 2 - 1;  
-        // ×óº¢×Ó  
+        // ï¿½ï¿½ï¿½ï¿½  
         nodeList.get(lastParentIndex).leftTree = nodeList  
                 .get(lastParentIndex * 2 + 1);  
         if (data.length % 2 == 1) {  
@@ -37,7 +37,7 @@ public class BinaryTree {
         } 
 	}
 	/**
-	 * ÖÐÐò±éÀú
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param treeNode
 	 */
 	public void inOrderTraverse(TreeNode treeNode) {  
@@ -48,7 +48,7 @@ public class BinaryTree {
 	        inOrderTraverse(treeNode.rightTree);  
 	}
 	/**
-	 * µÝ¹éÊµÏÖÊ÷µÄÇóºÍ¡£
+	 * ï¿½Ý¹ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
 	 * @param treeNode
 	 * @return
 	 */
@@ -64,7 +64,7 @@ public class BinaryTree {
 		return sum;
 	}
 	/**
-	 * ·ÇµÝ¹éÊµÏÖÖÐÐò±éÀú
+	 * ï¿½ÇµÝ¹ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param treeNode
 	 */
 	public void noRecInOrder(TreeNode treeNode){
@@ -115,13 +115,13 @@ public class BinaryTree {
 	}
 	
 	/**
-	 * ÄÚ²¿ÄÚ£¬Ö÷Òª¹¹ÔìÎªÊ÷µÄ½Úµã¡£
+	 * ï¿½Ú²ï¿½ï¿½Ú£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ä½Úµã¡£
 	 */
 	private static class TreeNode{
 		private TreeNode leftTree;
 		private TreeNode rightTree;
 		private int data;
-		private boolean isVisted=false;//ÊÇ·ñÒÑ¾­·ÃÎÊ±êÊ¶
+		private boolean isVisted=false;//ï¿½Ç·ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ê¶
 		TreeNode(int newData){
 			this.leftTree=null;
 			this.rightTree=null;
