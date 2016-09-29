@@ -3,7 +3,7 @@
 * @Package com.algorithm.leetcode
 * @Description TODO[what the file to do]
 * @Author ali blog:http://www.cnblogs.com/accipiter
-* @Date 2016Äê1ÔÂ23ÈÕÏÂÎç10:41:52
+* @Date 2016ï¿½ï¿½1ï¿½ï¿½23ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½10:41:52
 * @Version V1.0.1
 * @Copyright Copyright (C) 2016 jannelee <janneleemac@gmail.com>
 */
@@ -14,7 +14,7 @@ import java.util.Stack;
 /**
  * @ClassName SurroundedReions
  * @Description TODO
- * @Date ÏÂÎç10:41:52
+ * @Date ï¿½ï¿½ï¿½ï¿½10:41:52
  */
 public class SurroundedReions {
 	public void solve(char[][] board) {
@@ -41,7 +41,7 @@ public class SurroundedReions {
 	    		  dfs(board,m-1,j);
 	    	  }
 	      }
-	      //¾«¼òÐ´·¨
+	      //ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½
 //	      for(int i=0;i<m;i++){
 //	    	  for(int j=0;j<n;j++){
 //	    		  if(board[i][j]=='O'){
@@ -66,14 +66,14 @@ public class SurroundedReions {
 	 }
 	 /**
 	 * @Title dfs
-	 * @Description ²ÉÓÃµÝ¹é»á±¨java.lang.StackOverflowError´íÎó¡£·ÇµÝ¹éÊµÏÖµÄÊ±ºò£¬ÔÚifÖÐ¼ÓÈëcontinue¡£Ö®ºóµÃ²»µ½ÕýÈ·½á¹û¡£
+	 * @Description ï¿½ï¿½ï¿½ÃµÝ¹ï¿½á±¨java.lang.StackOverflowErrorï¿½ï¿½ï¿½ó¡£·ÇµÝ¹ï¿½Êµï¿½Öµï¿½Ê±ï¿½ï¿½ï¿½ï¿½ifï¿½Ð¼ï¿½ï¿½ï¿½continueï¿½ï¿½Ö®ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param board
 	 * @param i
 	 * @param j 
 	 * @Return void
 	 * @Throws 
 	 * @user Administrator
-	 * @Date 2016Äê1ÔÂ24ÈÕ
+	 * @Date 2016ï¿½ï¿½1ï¿½ï¿½24ï¿½ï¿½
 	  */
 	 public void dfs(char[][]board,int i,int j){
 //		 if(i<0||i>=board.length||j<0||j>=board[0].length||board[i][j]!='O'){
@@ -86,7 +86,7 @@ public class SurroundedReions {
 //			 dfs(board,i,j-1);
 //			 dfs(board,i,j+1);
 //		 } 
-		 //·ÇµÝ¹éÊµÏÖ
+		 //ï¿½ÇµÝ¹ï¿½Êµï¿½ï¿½
 		 Stack<Pos> s=new Stack<Pos>();
 		 Pos pos=new Pos(i,j);
 		 s.push(pos);
@@ -134,15 +134,6 @@ public class SurroundedReions {
 		}
 	 }
 	 
-	/**
-	 * @Title main
-	 * @Description TODO
-	 * @param args 
-	 * @Return void
-	 * @Throws 
-	 * @user Administrator
-	 * @Date 2016Äê1ÔÂ23ÈÕ
-	 */
 	public static void main(String[] args) {
 //		char board[][]={{'X','X','X','X'},{'X','O','O','X'},{'X','X','O','X'},{'X','O','X','X'}};
 		char board[][]={{'O','O','O','O','X','X'},{'O','O','O','O','O','O'},{'O','X','O','X','O','O'},{'O','X','O','O','X','O'},{'O','X','O','X','O','O'},{'O','X','O','O','O','O'}};

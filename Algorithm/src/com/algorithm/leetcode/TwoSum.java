@@ -3,7 +3,7 @@
 * @Package com.algorithm.leetcode
 * @Description TODO[what the file to do]
 * @Author ali blog:http://www.cnblogs.com/accipiter
-* @Date 2016Äê1ÔÂ25ÈÕÉÏÎç1:37:57
+* @Date 2016ï¿½ï¿½1ï¿½ï¿½25ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1:37:57
 * @Version V1.0.1
 * @Copyright Copyright (C) 2016 jannelee <janneleemac@gmail.com>
 */
@@ -12,7 +12,7 @@ package com.algorithm.leetcode;
 /**
  * @ClassName TwoSum
  * @Description TODO
- * @Date ÉÏÎç1:37:57
+ * @Date ï¿½ï¿½ï¿½ï¿½1:37:57
  */
 public class TwoSum {
 	
@@ -32,15 +32,6 @@ public class TwoSum {
 		return re;
 	}
 
-	/**
-	 * @Title main
-	 * @Description TODO
-	 * @param args 
-	 * @Return void
-	 * @Throws 
-	 * @user Administrator
-	 * @Date 2016Äê1ÔÂ25ÈÕ
-	 */
 	public static void main(String[] args) {
 		int nums[]={1,2,4,5,7,9};
 		int target=11;
