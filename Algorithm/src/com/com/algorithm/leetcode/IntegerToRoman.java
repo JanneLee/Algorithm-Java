@@ -8,6 +8,7 @@ public class IntegerToRoman {
 
     public static void main(String[] args){
         System.out.println(solve(101));
+        System.out.println(romanToInt("CD"));
     }
 
     public static String solve(Integer num){
@@ -26,4 +27,19 @@ public class IntegerToRoman {
         return ret.toString();
     }
 
+    public static int romanToInt(String s){
+        if(s==null||s.length()==0){
+            return 0;
+        }
+        String[] dict = {"M","D","C","L","X","V","I"};
+        int[] val = {1000,500,100,50,10,5,1};
+        s.toUpperCase();
+        for(int i=0;i<dict.length;i++){
+            int index=s.indexOf(dict[i]);
+            if(index!=-1){
+                return val[i]-romanToInt(s.substring(0,index))+romanToInt(s.substring(index+1));
+            }
+        }
+        return 0;
+    }
 }
