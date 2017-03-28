@@ -3,7 +3,7 @@
 * @Package com.algorithm.leetcode
 * @Description TODO[what the file to do]
 * @Author ali blog:http://www.cnblogs.com/accipiter
-* @Date 2016Äê1ÔÂ26ÈÕÏÂÎç1:52:51
+* @Date 2016ï¿½ï¿½1ï¿½ï¿½26ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1:52:51
 * @Version V1.0.1
 * @Copyright Copyright (C) 2016 jannelee <janneleemac@gmail.com>
 */
@@ -11,12 +11,10 @@ package com.algorithm.leetcode;
 
 import java.util.Stack;
 
-import com.algorithm.leetcode.ListNode;
-
 /**
  * @ClassName ReverseList
  * @Description TODO
- * @Date ÏÂÎç1:52:51
+ * @Date ï¿½ï¿½ï¿½ï¿½1:52:51
  */
 public class ReverseList {
 
@@ -45,7 +43,7 @@ public class ReverseList {
 	* @Return ListNode
 	* @Throws 
 	* @user Administrator
-	* @Date 2016Äê1ÔÂ26ÈÕ
+	* @Date 2016ï¿½ï¿½1ï¿½ï¿½26ï¿½ï¿½
 	 */
 	public ListNode reverseList(ListNode head) {
 		ListNode re=null;
