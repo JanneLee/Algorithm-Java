@@ -11,7 +11,7 @@ import java.util.Stack;
 public class ValidParentheses {
 
     public static void main(String[] args) {
-        String s="{}(]";
+        String s="))[]";
         System.out.println(isValid(s));
     }
 
@@ -25,24 +25,25 @@ public class ValidParentheses {
             return false;
         }
         Stack stack=new Stack();
-        String characters="([{}])";
-        for(int i=0;i<len;i+=d){
-            stack.push(s.charAt(i));
-        }
-        for(int i=len-1;i>0;i-=d){
-            System.out.println(s.charAt(i));
-            for(int j=0;j<characters.length();j++){
-                if(Objects.equals(s.charAt(i),characters.charAt(j))){
-                    System.out.println(j+":"+Math.abs(characters.length()-j-1));
-                    System.out.println(characters.charAt(j));
-                    System.out.println(characters.charAt(Math.abs(characters.length()-j-1)));
-                    char c= (char) stack.pop();
-                    System.out.println("char:"+c);
-                    if(!Objects.equals(c,characters.charAt(Math.abs(characters.length()-j-1)))){
+        String forwards="{[(";
+        String backends="}])";
+        stack.push(s.charAt(0));
+        for(int i=1;i<len;i++){
+            boolean push=true;
+            for(int j=0;j<forwards.length();j++){
+                if(Objects.equals(s.charAt(i),backends.charAt(j))){
+                    push=false;
+                    if(!Objects.equals(stack.pop(),forwards.charAt(j))){
                         return false;
                     }
                 }
             }
+            if(push){
+                stack.push(s.charAt(i));
+            }
+        }
+        if(!stack.isEmpty()){
+            return false;
         }
         return true;
     }
