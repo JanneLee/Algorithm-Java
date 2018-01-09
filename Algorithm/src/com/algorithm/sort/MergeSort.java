@@ -2,16 +2,15 @@
 * @FileName MergeSort.java
 * @Package com.algorithm.sort
 * @Description 
-* <li>¶şÂ·¹é²¢ÅÅĞò£¬ËüÏà¶ÔÓë¿ìÅÅĞòºÍ¶ÑÅÅĞòÀ´Ëµ£¬ÊÇÎÈ¶¨µÄÅÅĞò·½·¨£¬Ê±¼ä¸´ÔÓ¶Èo(nlnn),¿Õ¼ä¸´ÔÓ¶ÈÎªo(n)</li>
 * @Author ali blog:http://www.cnblogs.com/accipiter
-* @Date ÉÏÎç1:06:31
+* @Date 1:06:31
 * @Version V1.0.1
 */
 package com.algorithm.sort;
 /**
+* @author lijianli
 * @ClassName MergeSort
 * @Description TODO
-* @Date ÏÂÎç11:14:51
  */
 public class MergeSort {
 	/**
@@ -26,10 +25,10 @@ public class MergeSort {
 	* @user Administrator
 	 */
     public void merge(int[] arr, int low, int mid, int high) {
-        int i = low; // iÊÇµÚÒ»¶ÎĞòÁĞµÄÆğÊ¼
-        int j = mid + 1; // jÊÇµÚ¶ş¶ÎĞòÁĞµÄÆğÊ¼
-        int k = 0; // kÊÇÁÙÊ±´æ·ÅºÏ²¢ĞòÁĞµÄÆğÊ¼
-        int[] tmparr = new int[high - low + 1]; // tmparrÊÇÁÙÊ±ºÏ²¢ĞòÁĞ
+        int i = low;
+        int j = mid + 1;
+        int k = 0;
+        int[] tmparr = new int[high - low + 1];
         while (i <= mid && j <= high) {
             if (arr[i] <= arr[j]) {
             	tmparr[k++] = arr[i++];
@@ -100,7 +99,6 @@ public class MergeSort {
     /**
     * @Title MSort
     * @Description 
-    * <li>´¿µİ¹éÊµÏÖ¶şÂ·¹é²¢ÅÅĞò</li>
     * @param arr
     * @param low
     * @param high 
@@ -120,11 +118,11 @@ public class MergeSort {
     public static void main(String[] args) {
         int[] array = { 8, 1, 7, 3, 1, 2, 6, 9, 5};
         MergeSort merge = new MergeSort();
-        System.out.print("ÅÅĞòÇ°:\t\t");
+        System.out.print("æ’åºå‰:\t\t");
         merge.printAll(array);
 //        merge.sort(array);
         merge.mSort(array,0,array.length-1);
-        System.out.print("ÅÅĞòºó:\t\t");
+        System.out.print("æ’åºå:\t\t");
         merge.printAll(array);
     }
 }

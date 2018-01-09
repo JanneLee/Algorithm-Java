@@ -13,9 +13,7 @@ public class BinaryTree {
 	
 	private int data[]={1,2,3,5,9,8,5,100,11};
 	private static List<TreeNode> nodeList=null;
-	/**
-	 * ����B��
-	 */
+
 	public void createBTree(int data[]){
 		nodeList = new LinkedList<BinaryTree.TreeNode>();
 		
@@ -37,7 +35,6 @@ public class BinaryTree {
         } 
 	}
 	/**
-	 * �������
 	 * @param treeNode
 	 */
 	public void inOrderTraverse(TreeNode treeNode) {  
@@ -48,7 +45,6 @@ public class BinaryTree {
 	        inOrderTraverse(treeNode.rightTree);  
 	}
 	/**
-	 * �ݹ�ʵ��������͡�
 	 * @param treeNode
 	 * @return
 	 */
@@ -64,7 +60,6 @@ public class BinaryTree {
 		return sum;
 	}
 	/**
-	 * �ǵݹ�ʵ���������
 	 * @param treeNode
 	 */
 	public void noRecInOrder(TreeNode treeNode){
@@ -115,13 +110,12 @@ public class BinaryTree {
 	}
 	
 	/**
-	 * �ڲ��ڣ���Ҫ����Ϊ���Ľڵ㡣
 	 */
 	private static class TreeNode{
 		private TreeNode leftTree;
 		private TreeNode rightTree;
 		private int data;
-		private boolean isVisted=false;//�Ƿ��Ѿ����ʱ�ʶ
+		private boolean isVisted=false;
 		TreeNode(int newData){
 			this.leftTree=null;
 			this.rightTree=null;
