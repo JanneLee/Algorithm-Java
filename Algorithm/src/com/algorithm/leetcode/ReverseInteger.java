@@ -37,10 +37,24 @@ public class ReverseInteger {
         }
         return ret;
     }
+    public static int reverse3(int x){
+        final int minint=0x80000000;
+        final int maxint=0x7fffffff;
+        int ret=0;
+        while (x!=0){
+            ret=ret*10+x%10;
+            x=x/10;
+        }
+        if(ret<minint || ret>maxint){
+            ret=0;
+        }
+        return ret;
+    }
     public static void main(String []args){
         System.out.println(new Integer(-321).toString());
         System.out.println(new Integer("-01").intValue());
         System.out.println(reverse(1534236469));
         System.out.println(reverse2(-321));
+        System.out.println(reverse3(123));
     }
 }
