@@ -107,6 +107,7 @@ public class BinaryTree {
 		bt.noRecInOrder(nodeList.get(0));
 		System.out.println("\n+++++++++++++");
 		System.out.println(bt.noRecSum(nodeList.get(0)));
+		System.out.println(1<<13);
 	}
 	
 	/**

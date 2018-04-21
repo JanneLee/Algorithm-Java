@@ -24,7 +24,6 @@ public class ReverseList {
     	ListNode l2= new ListNode(2);
     	ListNode l3= new ListNode(3);
     	ListNode l4= new ListNode(4);
-//    	ListNode l5= new ListNode(5);
     	l1.next=l2;
     	l2.next=l3;
     	l3.next=l4;
@@ -35,16 +34,6 @@ public class ReverseList {
     		head=head.next;
     	}
 	}
-	/**
-	* @Title reverseList
-	* @Description TODO
-	* @param head
-	* @return 
-	* @Return ListNode
-	* @Throws 
-	* @user Administrator
-	* @Date 2016��1��26��
-	 */
 	public ListNode reverseList(ListNode head) {
 		ListNode re=null;
 		Stack<ListNode> s=new Stack<ListNode>();

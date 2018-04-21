@@ -1,6 +1,6 @@
 package com.algorithm.sort;
 
-public class TestQuickSort {
+public class QuickSort {
     @SuppressWarnings("unchecked")
     private static int Partition(Object [] arr,int low,int high){
         Object pivotKey=arr[low];

@@ -34,6 +34,7 @@ public class Atoi {
         }else{
             return 0;
         }
+
         System.out.println(str);
         if(new Long(str).longValue()>Integer.MAX_VALUE){
             return Integer.MAX_VALUE;
