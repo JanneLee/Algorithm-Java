@@ -5,11 +5,14 @@ public class QuickSort {
     private static int Partition(Object [] arr,int low,int high){
         Object pivotKey=arr[low];
         while(low<high){
+            System.out.println(" low:"+low+" high:"+high);
             while(low<high&&((Comparable<Object>)arr[high]).compareTo(pivotKey)>=0){
+                System.out.println("high:"+high);
                 --high;
             }
             arr[low]=arr[high];
             while(low<high&&((Comparable<Object>)pivotKey).compareTo(arr[low])>=0){
+                System.out.println("low:"+low);
                 ++low;
             }
             arr[high]=arr[low];
