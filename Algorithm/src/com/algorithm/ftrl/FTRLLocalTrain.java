@@ -61,9 +61,9 @@ public class FTRLLocalTrain {
 
     public static void main(String[] args) throws IOException {
         if(args.length != 6) {
-            System.out.println("java -jar ftrl_train.jar trainFile L1 L2 alpha dataMaxIndex model\n"
+            System.out.println("param: trainFile L1 L2 alpha dataMaxIndex model\n"
                     + "for example:\n"
-                    + "java -jar ftrl_train.jar train 1.0 1.0 0.1 1000 model");
+                    + "param: train 1.0 1.0 0.1 1000 model");
         }
         String trainFile = args[0];
         double L1 = Double.parseDouble(args[1]);
