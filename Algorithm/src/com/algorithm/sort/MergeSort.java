@@ -57,7 +57,7 @@ public class MergeSort {
     * @user Administrator
      */
     public void mergeStep(int[] arr, int len, int length) {
-        int i = 0;
+        int i;
         for (i=0;i+ 2*len-1<length;i+=2*len){
         	merge(arr,i, i+len-1, i+ 2*len-1);
         }
